@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+
+:root { 
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --prim-font: 'Fraunces', serif;
+    --sec-font: 'Montserrat', sans-serif;
+    --color-hover: #1a4031;
+}
+
+
+html , body { 
+    font-size: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    block-size: 100vh;
+     background-color: var(--Cream);
+}
+
+main { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    block-size: 450px;
+    inline-size: 600px;
+    border-radius: 5px;
+}
+
+
+main picture { 
+    border-radius: inherit;
+    width: 300px;
+    height: 100%;
+}
+
+main picture img { 
+    display: block;
+    block-size: 100%;
+    inline-size: 300px;
+    border-start-start-radius: inherit;
+    border-end-start-radius: inherit;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+main section { 
+    background-color: var(--White);
+    inline-size: 300px;
+   block-size: 450px;
+   padding-inline-start: 3rem;
+   padding-inline-end: 3rem;
+}
+
+section h3 { 
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 6px;
+    font-family: var(--sec-font);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-block-start: 3.5rem;
+    margin-block-end: 1rem;
+}
+
+section h1 { 
+    font-size: 3.2rem;
+    font-family: var(--prim-font);
+    line-height: 3rem;
+}
+
+
+
+section p {
+    color: var(--Dark-grayish-blue); 
+    font-size: 1.3rem;
+    line-height: 2rem;
+    letter-spacing: 0.8px;
+    font-family: var(--sec-font);
+}
+
+section #prices { 
+    display: flex;
+    align-items: center;
+    color: var(--Dark-cyan);
+    margin-block-start: 3.5rem;
+    margin-block-end: 3.5rem;
+    
+}
+
+section #prices .price { 
+    margin-inline-end: 1.7rem;
+    font-family: var(--prim-font);
+    font-size: 3rem;
+
+}
+
+section #prices .discount { 
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    margin-inline-start: 1rem;
+    text-align: center;
+}
+
+section button { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 9%;
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: var(--White);
+    line-height: 2rem;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+section button img { 
+    margin-right: 1.2rem;
+    display: block;
+}
+
+
+section button:hover { 
+    cursor: pointer;
+    background-color: var(--color-hover);
+}
+
+@media  (max-width:700px) {
+
+
+    main { 
+        inline-size: 345px;
+        block-size: 610px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    
+main picture { 
+    border-radius: inherit;
+    width: 345px;
+    height: 241px;
+}
+
+main picture img { 
+    width: 345px;
+    height: 241px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    object-fit: cover;
+    object-position: 0% 45%;
+}
+
+main section h1 { 
+   margin-top: 1.2rem; 
+   margin-bottom: 1.2rem; 
+}
+
+section button {
+    width: 90%;
+    height: 12%; 
+    margin-left: 1rem;
+    font-weight: 700;
+}
+}
+
