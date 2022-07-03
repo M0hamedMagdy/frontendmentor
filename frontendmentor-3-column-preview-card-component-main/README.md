@@ -24,7 +24,7 @@ Users should be able to:
 
 Desktop version
 
-![desktop version](/screenshot.png)
+![desktop version](./screenshot.png)
 
 ## My process
 
