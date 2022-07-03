@@ -40,9 +40,9 @@ body {
   text-align: center;
 }
 
-.card h6 {
+.card h1 {
   color: var(--neon-green);
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 800;
 }
 .card p {
@@ -63,10 +63,14 @@ body {
   box-shadow: none;
 }
 
+button { 
+  border: none;
+}
+
 .icon :hover {
-  box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
   -webkit-box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
   -moz-box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
+  box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
 }
 
 #m-divider {
@@ -93,5 +97,39 @@ body {
 
   .icon {
     margin-top: -20px;
+  }
+}
+
+/* Galaxy Fold */
+@media  (max-width: 290px) {
+
+  .card {
+    width: 260px;
+  }
+
+  .card .wrapper {
+    width: 240px;
+    text-align: center;
+
+  }
+
+  #advice { 
+    font-size: 21px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  #m-divider {
+    display: inline;
+    inline-size: 250px;
+    align-items: center;
+  }
+
+  #d-divider {
+    display: none;
+  }
+
+  .icon {
+    margin-top: -30px;
   }
 }
