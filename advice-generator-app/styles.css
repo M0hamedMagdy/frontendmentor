@@ -66,12 +66,12 @@ body {
 button { 
   border: none;
 }
-
-.icon :hover {
-  -webkit-box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
-  -moz-box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
-  box-shadow: -3px -5px 43px 11px rgba(82, 255, 168, 1);
+button:hover:focus { 
+  -webkit-box-shadow: -1px -2px 30px 5px rgba(82, 255, 168, 1);
+  -moz-box-shadow: -1px -2px 30px 5px rgba(82, 255, 168, 1);
+  box-shadow: -1px -2px 30px 5px rgba(82, 255, 168, 1);
 }
+
 
 #m-divider {
   display: none;
