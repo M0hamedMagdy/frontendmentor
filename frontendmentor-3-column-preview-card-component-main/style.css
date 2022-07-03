@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root { 
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --buttons: hsl(0, 0%, 95%);
+    --headings: hsl(0, 0%, 95%);
+    --background : hsl(0, 0%, 95%);
+    --font-family: 'Big Shoulders Display', cursive;
+    --font-family-sec: 'Lexend Deca', sans-serif;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body { 
+    font-size: 15px;
+}
+
+
+body { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    block-size: 100vh;
+    inline-size: 100%;
+    background-color: var(--background);
+}
+
+body main { 
+    inline-size: 60rem;
+    block-size: 33.4rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+body main .c1 { 
+    background-color: var(--Bright-orange);
+}
+body main .c2 { 
+    background-color: var(--Dark-cyan);
+}
+body main .c3 { 
+    background-color: var(--Very-dark-cyan);
+}
+
+
+body main div { 
+    padding: 2.5rem;
+}
+
+body main div img { 
+    margin-block-start: 1rem;
+    margin-block-end: 2rem;
+    width: 32%;
+
+}
+
+body main div h3 { 
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--headings);
+    margin-block-end: 2rem;
+    font-family: var(--font-family);
+}
+
+body main div p { 
+    font-size: 1.05rem;
+    color: var(--paragraphs);
+    font-family: var(--font-family-sec);
+    line-height: 1.6;
+    margin-block-end: 4rem;
+    font-weight: 500;
+}
+
+body main div a { 
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 10px 25px;
+    font-weight: 700;
+}
+
+body main div a:hover { 
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px white solid;
+    color: white;
+}
+
+body main div .a1 { 
+color: var(--Bright-orange);
+}
+body main div .a2 { 
+color: var(--Dark-cyan);
+}
+body main div .a3 { 
+color: var(--Very-dark-cyan);
+}
+
+@media screen  and (max-width: 900px)   { 
+
+    html, body { 
+        font-size: 14px;
+    }
+    body main div p { 
+        margin-block-end: 5rem;
+    }
+    
+    
+}
+
+
+@media screen  and (max-width : 450px) {
+
+    body main { 
+        flex-direction: column;
+        width: 325px;
+        overflow: visible;
+    }
+
+    body main .c1 { 
+        border-top-left-radius: 0.5rem ;
+        border-top-right-radius: 0.5rem ;
+    }
+    body main .c3 { 
+        border-bottom-left-radius: 0.5rem ;
+        border-bottom-right-radius: 0.5rem ;
+    }
+    
+}
+
+@media screen  and (max-width : 835px) {
+    html , body { 
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
