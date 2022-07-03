@@ -16,7 +16,7 @@ async function getAdvice() {
     .then((adviceData) => {
       console.log(adviceData);
       const Adviceobj = adviceData.slip;
-      resId.innerHTML = `<h1 id="adviceNamber"> Advice #${Adviceobj.id} </h1>`;
+      resId.innerHTML = `<h1 id="adviceNamber"> Advice # ${Adviceobj.id} </h1>`;
       resDiv.innerHTML = `<p> ${Adviceobj.advice} </p>`;
     })
   } catch(error) {

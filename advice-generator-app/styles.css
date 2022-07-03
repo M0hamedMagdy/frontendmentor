@@ -42,7 +42,7 @@ body {
 
 .card h1 {
   color: var(--neon-green);
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 800;
 }
 .card p {
