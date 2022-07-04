@@ -33,9 +33,9 @@ main {
   width: 320px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: -4px 2px 31px -11px rgba(0, 0, 0, 0.56);
   -webkit-box-shadow: -4px 2px 31px -11px rgba(0, 0, 0, 0.56);
   -moz-box-shadow: -4px 2px 31px -11px rgba(0, 0, 0, 0.56);
+  box-shadow: -4px 2px 31px -11px rgba(0, 0, 0, 0.56);
 }
 
 main > * { 
