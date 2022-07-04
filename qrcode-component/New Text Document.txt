@@ -1,0 +1,2 @@
+20 min project 
+playing with flexbox , box model and simple a11y html tags 
