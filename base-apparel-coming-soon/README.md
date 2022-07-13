@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/M0hamedMagdy/frontendmentor/base-apparel-coming-soon)
+- Solution URL: [Github](https://github.com/M0hamedMagdy/frontendmentor/tree/main/base-apparel-coming-soon)
 - Live Site URL: [Github Pages](https://m0hamedmagdy.github.io/frontendmentor/base-apparel-coming-soon)
 
 ## My process
