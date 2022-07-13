@@ -11,3 +11,6 @@
 
 [Qr Code Component](https://m0hamedmagdy.github.io/frontendmentor/qrcode-component/)
 
+[Base Apparel Coming Soon Page](https://m0hamedmagdy.github.io/frontendmentor/base-apparel-coming-soon/)
+
+
