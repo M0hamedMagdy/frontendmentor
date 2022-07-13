@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+  --main-font: "League Spartan", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+picture {
+  display: block;
+}
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: 100%;
+  line-height: 0;
+  object-fit: cover;
+  object-position: top right;
+}
+
+html,
+body {
+  font-size: 12px;
+  font-family: var(--main-font);
+  block-size: 100vh;
+  inline-size: 100%;
+}
+
+main {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.slider {
+  display: none;
+  transform: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.active {
+  display: block;
+}
+
+.top-section {
+  inline-size: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.top-section .left {
+  flex: 58%;
+  position: relative;
+  inline-size: 70rem;
+}
+
+.top-section .left picture {
+  block-size: 100%;
+}
+
+.top-section .left picture img {
+  inline-size: 100%;
+}
+
+#navbar {
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  width: 70%;
+  font-size: 1.5rem;
+  font-family: var(--main-font);
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  color: var(--White);
+}
+
+#navbar img {
+  margin-inline-end: 6.5rem;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.links li {
+  list-style: none;
+  margin-inline-end: 2rem;
+}
+
+.links li a {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 1.2rem;
+}
+.links li a:hover {
+  padding-block-end: 0.5rem;
+  border-bottom: white 2px solid;
+}
+.top-section .right {
+  position: relative;
+  flex: 42%;
+  padding: 7.5rem;
+  padding-block-start: 11rem;
+  padding-block-end: 10rem;
+}
+.top-section .right h2 {
+  font-family: "League Spartan", sans-serif;
+  font-size: 4rem;
+  margin-block-end: 2rem;
+}
+.top-section .right p {
+  color: var(--Dark-Gray);
+  line-height: 1.5;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-block-end: 3rem;
+}
+.top-section .right a {
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1rem;
+  font-size: 1.2rem;
+  color: var(--Black);
+}
+.top-section .right .btns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.btn-right,
+.btn-left {
+  padding: 30px;
+  width: 80px;
+  height: 85px;
+  background-color: hsl(0deg 0% 0%);
+  margin-right: -3px;
+  border: 0;
+  outline: 0;
+}
+
+.btn-right:hover,
+.btn-left:hover,
+.btn-right:focus,
+.btn-left:focus {
+  background-color: var(--Dark-Gray);
+  cursor: pointer;
+}
+/* Button Section */
+
+#botton-section {
+  display: flex;
+}
+
+#botton-section div.about {
+  flex: 2;
+  padding: 3%;
+  padding-bottom: 0;
+}
+
+#botton-section div.about h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 5px;
+  font-family: var(--main-font);
+  color: var(--Black);
+}
+
+#botton-section div.about p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--Dark-Gray);
+}
+
+@media screen and (max-width: 700px) {
+  img {
+    max-inline-size: 100%;
+  }
+
+  .top-section .left {
+    inline-size: 100%;
+    max-inline-size: 100%;
+  }
+  .top-section .left .links {
+    display: none;
+  }
+
+  .top-section {
+    flex-direction: column;
+  }
+
+  .btns {
+    display: block;
+    top: -85px;
+    width: 100%;
+  }
+
+  .top-section .right {
+    inline-size: 100%;
+    max-inline-size: 100%;
+
+    padding: 0;
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .top-section .right h2 {
+    font-size: 2.5rem;
+    margin-block-end: 1.5rem;
+  }
+  .top-section .right p {
+    font-size: 1rem;
+    margin-block-end: 2.5rem;
+  }
+
+  #botton-section {
+    flex-direction: column;
+  }
+
+  #botton-section div.about {
+    padding: 2.5rem;
+    padding-bottom: 0;
+  }
+
+  #botton-section div.about h3 {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #botton-section div.about p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+}
