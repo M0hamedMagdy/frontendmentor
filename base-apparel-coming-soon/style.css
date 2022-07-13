@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
+
+:root {
+  --main-font: "Josefin Sans", sans-serif;
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  --gradient-main: linear-gradient(135deg, hsl(0, 80%, 100%), hsl(0, 80%, 86%));
+  --gradient-second: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+
+body {
+  block-size: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  block-size: 100%;
+}
+
+/* Text */
+
+main .bx-left {
+  flex: 59%;
+  padding-inline-start: 3.3rem;
+  background-image: url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 50%;
+}
+
+main .bx-left header {
+  padding-inline-start: 6rem;
+  margin-block-start: 4rem;
+}
+
+main .bx-left .para {
+  padding-inline-start: 6rem;
+  padding-inline-end: 15rem;
+  margin-block-start: 8rem;
+}
+
+main .bx-left .para h1,
+span {
+  font-size: 4rem;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Red);
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+main .bx-left .para h1 span {
+  display: block;
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--Desaturated-Red);
+  line-height: 1.1;
+}
+
+main .bx-left .para p {
+  margin-block-start: 1rem;
+  padding-inline-end: 1.9rem;
+  line-height: 2;
+  color: var(--Desaturated-Red);
+}
+
+main .bx-left form {
+  position: relative;
+  padding-inline-start: 6rem;
+  margin-block-start: 2rem;
+  inline-size: 34rem;
+}
+
+main .bx-left form input[type="email"] {
+  padding-block-end: 1.2rem;
+  padding-block-start: 1.2rem;
+  padding-inline-start: 2rem;
+  inline-size: 28rem;
+  border: 1px solid var(--Desaturated-Red);
+  border-radius: 2rem;
+  color: var(--Soft-Red);
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+main .bx-left form input[type="email"]::placeholder {
+  color: var(--Desaturated-Red);
+  letter-spacing: 2px;
+}
+
+main .bx-left form input[type="email"]:focus {
+  outline: 1px solid var(--Soft-Red);
+}
+
+main .bx-left form .error {
+  /* Change display with javascript */
+  display: none;
+  position: absolute;
+  top: 25%;
+  right: 20%;
+}
+
+main .bx-left form button {
+  background: var(--gradient-second);
+  border: 0;
+  border-radius: 2rem;
+  position: absolute;
+  block-size: 100%;
+  inline-size: 6rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+main .bx-left form button:hover {
+  background: var(--gradient-main);
+  box-shadow: 0 5px 20px 3px hsl(0deg 80% 86%);
+}
+
+main .bx-left .error-message {
+  display: none;
+  color: var(--Soft-Red);
+  padding-block-start: 1rem;
+  padding-inline-start: 8rem;
+}
+
+/* Img */
+
+main .imgbx {
+  max-inline-size: 610px;
+  flex: 41%;
+}
+
+main .imgbx img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: 100%;
+  aspect-ratio: 61/80;
+  object-fit: cover;
+}
+
+main .imgMobile {
+  display: none;
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 450px) {
+  * {
+    font-size: 12px;
+  }
+
+  body {
+    width: 100%;
+    overflow: visible;
+    max-inline-size: 100%;
+    block-size: 100vh;
+    font-size: 12px;
+  }
+
+  main {
+    flex-direction: column;
+    inline-size: 100%;
+    block-size: 100vh;
+  }
+
+  main .bx-left {
+    padding-inline-start: 0rem;
+  }
+
+  main .bx-left header {
+    padding-inline-start: 3rem;
+    margin-block-start: 2rem;
+    margin-block-end: 2rem;
+  }
+
+  main .imgMobile {
+    display: block;
+    /* max-inline-size: 450px; */
+  }
+
+  main .imgMobile img {
+    display: block;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  main .bx-left .para {
+    padding-inline-start: 4.3rem;
+    padding-inline-end: 4.3rem;
+    margin: 0;
+    margin-block-start: 5rem;
+  }
+
+  main .bx-left .para h1,
+  span {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+
+  main .bx-left .para p {
+    padding-inline-end: 0;
+    text-align: center;
+    margin-block-start: 2rem;
+  }
+
+  main .bx-left form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inline-size: 100%;
+    padding-inline-start: 0rem;
+    margin-block-start: 3rem;
+  }
+
+  main .bx-left form input[type="email"] {
+    inline-size: 80%;
+  }
+
+  main .bx-left form .error {
+    top: 20%;
+    left: 65%;
+  }
+
+  main .bx-left form button {
+    left: 72%;
+  }
+
+  main .imgbx {
+    display: none;
+  }
+
+  main .imgbx img {
+    display: none;
+  }
+}
