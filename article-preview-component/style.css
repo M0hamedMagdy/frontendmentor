@@ -130,6 +130,7 @@ main section div.creator button div.share {
 
 main section div.creator button:focus {
   background-color: var(--Very-Dark-Grayish-Blue);
+  z-index: 1;
 }
 
 main section div.creator button:focus div.share {
@@ -185,6 +186,83 @@ main section div.creator button:focus div.share::after {
   border-top: 10px solid var(--Very-Dark-Grayish-Blue);
 }
 
-/* Mobile Width */
+@media screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+    inline-size: 330px;
+    block-size: 520px;
+  }
 
-/* HTML Strcture is Easy  */
+  main picture {
+    display: block;
+    inline-size: 100%;
+    block-size: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+
+  main picture img {
+    block-size: 100%;
+    inline-size: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+  }
+
+  main section {
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+  }
+
+  main section div.creator button:focus {
+    background-color: var(--Light-Grayis-Blue);
+    z-index: 0;
+  }
+
+  main section div.creator button:focus .imgBtn {
+    background-color: var(--Light-Grayis-Blue);
+    outline: none;
+    border: none;
+    inline-size: 2rem;
+    block-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 5px;
+  }
+
+  main section div.creator button:focus .imgBtn img {
+    width: 15px;
+  }
+
+  main section div.creator button:focus div.share {
+    z-index: -1;
+    inline-size: 278px;
+    justify-content: flex-start;
+    top: -7px;
+    left: -268px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 1s;
+  }
+
+  main section div.creator button:focus div.share h5 {
+    font-size: 1rem;
+  }
+
+  main section div.creator button:focus div.share ul li {
+    margin-inline-start: 1rem;
+  }
+  main section div.creator button:focus div.share ul li:first-child {
+    margin-inline-start: 0.8rem;
+  }
+
+  main section div.creator button:focus div.share::after {
+    display: none;
+  }
+}

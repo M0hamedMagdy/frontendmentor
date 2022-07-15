@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/M0hamedMagdy/frontendmentor/tree/main/article-preview-component)
+- Solution URL: [GitHub](http://github.com/m0hamedMagdy/frontendmentor/article-preview-component)
 - Live Site URL: [GitHub Pages](http://m0hamedmagdy.github.io/frontendmentor/article-preview-component)
 
 ## My process
