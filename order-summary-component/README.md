@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/M0hamedMagdy/frontendmentor/tree/main/order-summary-component)
-- Live Site URL: [GitHub Pages](https://m0hamedmagdy.github.io/frontendmentor-challenges/order-summary-component/)
+- Live Site URL: [GitHub Pages](https://m0hamedmagdy.github.io/frontendmentor/order-summary-component/)
 
 ## My process
 
