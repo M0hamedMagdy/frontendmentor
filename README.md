@@ -19,7 +19,7 @@
 
 [Huddle landing page with introductory section](https://m0hamedmagdy.github.io/frontendmentor/landingpage-introductory-section)
 
-[Order Summary Component](https://m0hamedmagdy.github.io/frontendmentor/order-summary-component/)
+[Order Summary Component #SCSS](https://m0hamedmagdy.github.io/frontendmentor/order-summary-component/)
 
 
 
