@@ -18,16 +18,18 @@ html, body {
   align-items: center;
   justify-content: center;
 }
-
-@media  (max-width: 375px) {
+@media screen and (max-width: 600px) {
   html, body {
     background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 7.5px;
   }
 }
 
 main {
-  inline-size: 450px;
-  block-size: 700px;
+  inline-size: 45rem;
+  block-size: 70rem;
   border-radius: 25px;
   background-color: white;
 }
