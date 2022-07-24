@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <meta property="og:title" content="Testimonials Grid Section" />
+  <meta property="og:site_name" content="Testimonials Grid Section" />
+  <meta
+    property="og:url"
+    content="https://m0hamedmagdy.github.io/frontendmentor/interactive-rating-component/"
+  />
+  <meta
+    property="og:description"
+    content="Frontend Mentor challenge that helped me improve my TailwindCss and Alpinejs Skils"
+  />
+  
+  <meta property="og:image" content="images/op_image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:image:alt" content="Interactive rating component" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="article:author" content="Mohamed Magdy" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="output.css" rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+    [x-cloak] { display: none !important; };
+  </style>
+
+</head>
+  <body
+    class="flex items-center justify-center w-full h-screen bg-Dark-Blue"
+    x-data="{
+      ratedValue: 0,
+      submited: false
+    }"
+  >
+  <section
+  class=" flex-col bg-Very-Dark-Blue w-[350px]  sm:w-[420px] h-[420px] rounded-[40px] flex items-start justify-start p-10"
+  x-data="{
+    inputs: [
+          {id: 1 , value: 1 },
+          {id: 2 , value: 2 },
+          {id: 3 , value: 3 },
+          {id: 4 , value: 4 },
+          {id: 5 , value: 5 }
+        ]
+      }"
+        x-show="!submited"
+        x-cloak
+        >
+        <picture class="rounded-full bg-Dark-Blue w-16 h-16 flex items-center justify-center self-start justify-self-start">
+          <img src="images/icon-star.svg" alt="Star Icon">
+        </picture>
+        <h1 class="text-White text-5xl mt-14">How did we do?</h1>
+          <p class=" text-White mt-5 leading-9 text-2xl opacity-40"> 
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+          
+          <ul class="flex w-full items-center justify-between p-3 pl-2 pr-7 mt-3">
+            <template x-for="input in inputs">
+              <li class="ml-2">
+                <label 
+                for="input.id" 
+                x-on:click="ratedValue = input.value"
+                @click='
+                $el.classList.toggle("bg-Orange")'
+                class="rates block bg-Dark-Blue checked:hidden w-14 h-14 rounded-full p-4 m-1 text-center text-xl text-Light-Grey hover:bg-Light-Grey hover:text-White hover:cursor-pointer "
+                >
+                  <input class="w-full hidden checked:bg-Orange" type="radio" name="input.id">
+                  <span x-text="input.value"
+                  ></span>
+              </label>
+            </li>
+            </template>
+          </ul>
+          <label 
+          for="submit"
+          class=" block self-center justify-center"
+          >
+          <button 
+          type="button"
+          id="submit"   
+          class= "
+          bg-Orange rounded-3xl text-White text-center text-xl mt-5 p-3 pr-[120px] pl-[120px] sm:pr-[140px] sm:pl-[140px] self-center justify-self-center uppercase tracking-[0.4rem]
+          hover:bg-White hover:text-Orange
+          "
+          x-on:click="submited = true"
+          
+          >
+          Submit
+        </button>
+
+        
+      </label>
+    </section>
+    
+    <section
+    class="  flex-col bg-Very-Dark-Blue  w-[350px]  sm:w-[420px] h-[420px] rounded-[40px] flex items-center justify-start p-10"
+    x-show="submited"
+    x-cloak
+    x-transition
+    >
+    <picture class="w-40 h-20 flex items-center justify-center mt-12 mb-8 ">
+      <img src="images/illustration-thank-you.svg" alt="Thank You">
+    </picture>
+    
+    <h1 class=" text-Orange mt-9 mb-7 bg-Dark-Blue rounded-2xl text-center p-1 pr-3 pl-3 tracking-wider ">You selected <span x-text="ratedValue"></span> out of 5</h1>
+
+    <p class="text-White text-4xl mt-6 mb-2 ">Thank You!</p>
+    <p class="text-Medium-Grey text-center text-90 mt-2 w-[90%] leading-7 tracking-widest" >We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+    
+  </section>
+
+  </script>
+    </body>
+</html>
