@@ -1,6 +1,6 @@
 ## List of Challenges 
  
- ### Components 
+### Components 
 
 [Product Preview Card](https://m0hamedmagdy.github.io/frontendmentor/product-preview-card)
 
