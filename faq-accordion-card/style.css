@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {     
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+
+--bg-g-Soft-violet: #af67e9;
+--bg-g-Soft-blue: #6565e7;
+
+--Very-dark-grayish-blue: hsl(237, 12%, 33%);
+--Dark-grayish-blue: hsl(240, 6%, 50%);
+--Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html,body { 
+    inline-size: 100%;
+    block-size: 100vh;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(101,101,231);
+    background: linear-gradient(21deg, rgba(101,101,231,1) 0%, rgba(175,103,233,1) 100%);
+    background-size: cover;
+    background-position: top left;
+}
+
+
+
+main.card { 
+    background: white;
+    border-radius: 25px;
+    inline-size: 92rem;
+    block-size: 51rem;
+    -webkit-box-shadow: 2px 6px 16px -6px rgba(0,0,0,0.55); 
+    box-shadow: 2px 6px 16px -6px rgba(0,0,0,0.55);    
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: top 40% left -65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+main::before { 
+    content: url(images/illustration-box-desktop.svg);
+    z-index: 1;
+    top: 190px;
+    left: -35px;
+    position: absolute;
+
+}
+main.card picture { 
+    display: flex;
+    flex: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    overflow: hidden;
+}
+
+main.card picture img { 
+    line-height: 0;
+    max-inline-size: 100%;
+    position: absolute;
+    top: 6rem;
+    left: -5rem;    
+}
+
+
+
+ main.card section { 
+    flex: 1;
+    block-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6%;
+    padding-left: 8%;
+    font-size: 1.2rem;
+    overflow-y: auto;
+ }
+
+
+ main.card  h1 { 
+    font-size: 3em;
+    font-weight: 700;
+    margin-block-end: 1rem;
+
+ }
+
+ main.card section details { 
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: var(--Very-dark-desaturated-blueDark-grayish-blue);
+
+}
+
+main.card section details::after { 
+    content: '';
+    display: block;
+    inline-size: 350px;
+    block-size: 0;
+    color: black;
+    border: 1px var(--Light-grayish-blue) solid ;
+    margin-block-start: 2rem;
+}
+
+
+main.card section details[open] summary {
+    font-weight: 700;
+    margin-block-end: 0.5rem;
+    color: var(--Dark-grayish-blue);
+
+
+    
+ }
+
+ main.card section details p { 
+    color: var(--Dark-grayish-blue);
+    font-size: 1.3rem;
+    inline-size: 85%;
+    line-height: 1.5;
+
+ }
+
+
+
+ main.card section details summary::after {
+     content: "";
+     display: inline-block;
+     background-image: url(images/icon-arrow-down.svg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     inline-size: 15px;
+     block-size: 15px;
+     margin-inline-start: 10px;
+
+}
+main.card section details[open] summary::after {
+    transform: rotate(180deg)
+}
+
+main.card section details summary { 
+   font-size: 1.7rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   list-style: none;
+   color: var(--Dark-grayish-blue);
+
+}
+
+ main.card section details summary:hover { 
+    color:var(--Soft-red)
+ }
+
+ main.card section details summary::-webkit-details-marker {
+    display:none;
+}
+  
+
+@media screen and (max-width: 1050px) {
+    main::before { 
+    
+        display: none;
+    }
+    
+main.card { 
+    margin-block-start: 11rem;
+    flex-direction: column;
+    width: 330px;
+    height: 540px;
+    background-image: none;
+    overflow: visible;
+}    
+
+
+main.card picture { 
+    display: flex;
+    flex: 1;
+    block-size: 100%;
+    inline-size: 100%;
+    background-image: url(images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+main.card picture img { 
+    position: absolute;
+    top: -11.5rem;
+    left: 4rem; 
+    inline-size: 75%;   
+}
+
+
+main.card section { 
+    flex: 5;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6%;
+    font-size: 1.2rem;
+    
+ }
+
+ main.card section details { 
+    font-size: 1em;
+    padding: 1rem;
+
+}
+
+main.card section details::after { 
+    inline-size: 250px;
+    margin-block-start: 1.5rem;
+}
+
+
+main.card section details[open] summary {
+    font-weight: 700;
+    margin-block-end: 0.5rem;
+    color: var(--Dark-grayish-blue);
+    
+ }
+
+ main.card section details p { 
+    font-size: 1.3rem;
+    inline-size: 85%;
+
+ }
+
+
+main.card section details summary { 
+   font-size: 1.3rem;
+   font-weight: 700;
+}
+
+  
+
+
+
+}
