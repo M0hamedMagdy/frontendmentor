@@ -2,6 +2,8 @@
  
 ### Components 
 
+[FAQ Accordion Card](https://m0hamedmagdy.github.io/frontendmentor/faq-accordion-card)
+
 [Product Preview Card](https://m0hamedmagdy.github.io/frontendmentor/product-preview-card)
 
 [3 Columns Preview Cards](https://m0hamedmagdy.github.io/frontendmentor/3column-preview-cards/)
