@@ -12,10 +12,7 @@ function slideRight() {
     if(indexOf + 1 < sliders.length) {         
         sliders[indexOf].classList.remove('active')
         sliders[indexOf + 1 ].classList.add('active')
-    } else { 
-        return 0
-    }
-    
+    } 
 }
 
 function slideLeft() {     
@@ -23,15 +20,10 @@ function slideLeft() {
     if(indexOf - 1 <= sliders.length && indexOf !== 0) {         
         sliders[indexOf].classList.remove('active')
         sliders[indexOf - 1 ].classList.add('active')
-    } else { 
-        return 0
-    }
-    
+    } 
 }
 
 
 
-
-
 btnRight.forEach(btn => btn.addEventListener('click' ,  slideRight))
- btnLeft.forEach(btn => btn.addEventListener('click' , slideLeft))
+btnLeft.forEach(btn => btn.addEventListener('click' , slideLeft))

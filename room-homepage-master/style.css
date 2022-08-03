@@ -78,6 +78,7 @@ main {
   flex-direction: row;
   align-self: center;
   color: var(--White);
+  z-index: 1;
 }
 
 #navbar img {
@@ -192,8 +193,43 @@ main {
     inline-size: 100%;
     max-inline-size: 100%;
   }
-  .top-section .left .links {
-    display: none;
+
+  #navbar { 
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navbar .hamburger-lines {
+    display: block;
+    height: 22px;
+    width: 30px;
+    position: absolute;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #navbar .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+  }
+  
+
+  #navbar img { 
+    margin-left: 5rem;
+
+  }
+
+  #navbar .logo { 
+    inline-size: 30%;
+  }
+
+  #navbar .links { 
+      display: none;
   }
 
   .top-section {
